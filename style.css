@@ -39,3 +39,58 @@ body {
     color: #ffffff;
 }
 
+/* Estilos da Seção de Perfil */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    object-fit: cover;  /* Garante que a foto não distorça */
+    border: 4px solid var(--accent-color); /* Adiciona uma borda estilizada */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.tag {
+    background-color: #e2e8f0;
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Responsividade Básica para telas menores */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
